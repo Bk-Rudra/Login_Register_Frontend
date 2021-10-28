@@ -49,7 +49,7 @@ class Login extends React.Component {
   handleLogin(e) {
     e.preventDefault();
 
-    const { location, history } = this.props;
+    let { history } = this.props;
 
     this.setState({
       message: "logged in sucessfully",
@@ -59,7 +59,7 @@ class Login extends React.Component {
     if (this.checkBtn.context._errors.length === 0) {
       AuthService.login(this.state.username, this.state.password).then(
         () => {
-          history.push("/profile"); // this line error is occuring this is login component....
+          history.push("/profile"); 
           // <Redirect to="/profile" />
         },
         (error) => {

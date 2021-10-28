@@ -1,0 +1,34 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  min-height: 10vh;
+  align-items: center;
+  background-color: darkslategray;
+  color: antiquewhite;
+}
+
+nav .navBar {
+  font-size: 25px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+nav .navLink {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+}
+
+nav .navLink a {
+  font: size 20px;
+  font-weight: normal;
+  cursor: pointer;
+}
+nav .navLink a:hover {
+  border-bottom: 1.5px solid wheat;
+}
+
+.button {
+  padding-left: 50px;
+  cursor: pointer;
+}
