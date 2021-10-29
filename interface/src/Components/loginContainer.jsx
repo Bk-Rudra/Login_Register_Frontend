@@ -5,27 +5,24 @@ import Register from "./register";
 import Login from "./login";
 import RightSide from "./rightSide";
 import { withRouter } from "react-router";
-import AuthService from "../Services/auth.service";
 
-const LoginContainer = (props) => {
-    const [isLogginActive, setLoginActive] = useState(true);
+const LoginContainer = () => {
+  const [isLogginActive, setLoginActive] = useState(true);
 
-    useEffect(() => {
+  useEffect(() => {}, []);
 
-    }, []);
-
-    return (
-        <div className="App">
-            <div className="login">
-                <div className="container">
-                    {isLogginActive ? <Login /> : <Register />}
-                </div>
-                <RightSide
-                    isLogginActive={isLogginActive}
-                    onClick={() => setLoginActive(!isLogginActive)}
-                />
-            </div>
+  return (
+    <div className="App">
+      <div className="login">
+        <div className="container">
+          {isLogginActive ? <Login /> : <Register />}
         </div>
-    );
-  };
+        <RightSide
+          isLogginActive={isLogginActive}
+          onClick={() => setLoginActive(!isLogginActive)}
+        />
+      </div>
+    </div>
+  );
+};
 export default withRouter(LoginContainer);

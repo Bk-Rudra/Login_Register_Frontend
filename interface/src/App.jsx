@@ -3,11 +3,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./css/App.css";
 import Profile from "./Components/profile";
 import AuthService from "./Services/auth.service";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Switch, Route } from "react-router-dom";
 import "./css/style.css";
 import LoginContainer from "./Components/loginContainer";
 import { withRouter } from "react-router";
-
 
 class App extends React.Component {
   constructor(props) {
@@ -21,19 +20,15 @@ class App extends React.Component {
 
   componentDidMount() {
     const user = AuthService.getCurrentUser();
-    setTimeout(() => {user && this.props.history.push("/profile")}, 0);
-  }
-
-  logout = () => {
-    AuthService.logout();
+    setTimeout(() => {
+      user && this.props.history.push("/profile");
+    }, 0);
   }
 
   render() {
     return (
       <Switch>
-        <Route exact path="/" >
-          <LoginContainer />
-        </Route>
+        <Route exact path="/" component={LoginContainer} />
         <Route exact path="/profile" component={Profile} />
       </Switch>
     );
@@ -41,5 +36,3 @@ class App extends React.Component {
 }
 
 export default withRouter(App);
-
-
