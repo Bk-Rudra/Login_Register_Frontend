@@ -17,3 +17,5 @@ interface/.env
 
 
 interface/package-lock.json
+
+.vscode/settings.json
