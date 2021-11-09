@@ -1,0 +1,49 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  min-height: 10vh;
+  align-items: center;
+  background-color: darkslategray;
+  color: antiquewhite;
+}
+
+nav .navBar {
+  font-size: 25px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+nav .navLink {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+}
+
+nav .navLink a {
+  font: size 20px;
+  font-weight: normal;
+  cursor: pointer;
+}
+nav .navLink a:hover {
+  border-bottom: 1.5px solid wheat;
+}
+
+.button {
+  padding-left: 50px;
+  cursor: pointer;
+}
+
+.pdf-container {
+  width: 80%;
+  height: 800px;
+  background-color: cadetblue;
+  overflow-y: auto;
+  display: flex;
+}
+.error-msg{
+  width: 100%;
+  color: red;
+  font-size: 14px;
+  font-weight: 600;
+}
+
