@@ -32,3 +32,18 @@ nav .navLink a:hover {
   padding-left: 50px;
   cursor: pointer;
 }
+
+.pdf-container {
+  width: 80%;
+  height: 800px;
+  background-color: cadetblue;
+  overflow-y: auto;
+  display: flex;
+}
+.error-msg{
+  width: 100%;
+  color: red;
+  font-size: 14px;
+  font-weight: 600;
+}
+

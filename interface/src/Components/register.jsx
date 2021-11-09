@@ -98,7 +98,6 @@ export default class Register extends React.Component {
   }
 
   handleRegister(e) {
-    // alert(e);
     e.preventDefault();
 
     this.setState({
@@ -143,7 +142,7 @@ export default class Register extends React.Component {
         <br />
         <div className="content">
           <div className="image">
-            <img src={loginImage} />
+            <img src={loginImage} alt="" />
           </div>
           <Form
             onSubmit={(e) => this.handleRegister(e)}

@@ -52,17 +52,18 @@ class Login extends React.Component {
     let { history } = this.props;
 
     this.setState({
-      message: "logged in sucessfully",
+      message: "",
       loading: true,
     });
     this.form.validateAll();
     if (this.checkBtn.context._errors.length === 0) {
       AuthService.login(this.state.username, this.state.password).then(
         () => {
-          history.push("/profile"); 
+          history.push("/profile");
           // <Redirect to="/profile" />
         },
         (error) => {
+          alert("* duhh..! bad credentials...!!");
           const resMessage =
             (error.response &&
               error.response.data &&
@@ -89,7 +90,7 @@ class Login extends React.Component {
         <br />
         <div className="content">
           <div className="image">
-            <img src={loginImage} />
+            <img src={loginImage} alt="" />
           </div>
           <Form
             onSubmit={(e) => {
