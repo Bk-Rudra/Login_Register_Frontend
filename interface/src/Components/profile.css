@@ -19,31 +19,40 @@ nav .navLink {
   width: 30%;
 }
 
-nav .navLink a {
-  font: size 20px;
-  font-weight: normal;
-  cursor: pointer;
+nav .navLink button {
+  background-color: darkslategray;
+  border: none;
+  color: white;
+  padding: 2px 15px;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 12px;
+  transition: 0.3s;
 }
-nav .navLink a:hover {
-  border-bottom: 1.5px solid wheat;
+nav .navLink button:hover {
+  background-color: rgb(69, 114, 114);
+  color: white;
 }
 
-.button {
+.body {
   padding-left: 50px;
-  cursor: pointer;
+}
+body .name {
+  padding-left: 700px;
 }
 
 .pdf-container {
-  width: 80%;
-  height: 800px;
-  background-color: cadetblue;
+  margin: auto;
+  width: 70%;
+  height: 950px;
+  background-color: rgba(81, 138, 138, 0.301);
   overflow-y: auto;
-  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.error-msg{
+.error-msg {
   width: 100%;
   color: red;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 600;
 }
-
