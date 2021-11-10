@@ -19,3 +19,4 @@ interface/.env
 interface/package-lock.json
 
 .vscode/settings.json
+interface/target/npmlist.json
