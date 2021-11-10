@@ -169,7 +169,7 @@
   padding: 5px 20px;
   border: 0;
   background-color: #6347dfc5;
-  color: #fff;
+  color: rgb(208, 179, 246);
   border-radius: 3px;
   -webkit-transition: all 250ms ease-in-out;
   transition: all 250ms ease-in-out;
@@ -177,7 +177,7 @@
 }
 
 .btn:hover {
-  background-color: #672ada;
+  background-color: #7d44e79f;
 }
 
 .btn:focus {
