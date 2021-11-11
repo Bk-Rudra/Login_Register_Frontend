@@ -23,10 +23,10 @@ nav .navLink button {
   background-color: darkslategray;
   border: none;
   color: white;
-  padding: 2px 15px;
+  padding: 5px 15px;
   text-align: center;
   font-size: 16px;
-  border-radius: 12px;
+  border-radius: 3px;
   transition: 0.3s;
 }
 nav .navLink button:hover {
@@ -48,7 +48,7 @@ body .name {
   background-color: rgba(81, 138, 138, 0.301);
   overflow-y: auto;
   justify-content: center;
-  align-items: center;
+  align-items: center
 }
 .error-msg {
   width: 100%;
