@@ -1,13 +1,12 @@
 import React, { useState } from "react";
 import { withRouter } from "react-router";
 import AuthService from "../Services/auth.service";
-import "./profile.css";
+import "../css/profile.css";
 import { Viewer } from "@react-pdf-viewer/core";
 import { defaultLayoutPlugin } from "@react-pdf-viewer/default-layout";
 import "@react-pdf-viewer/core/lib/styles/index.css";
 import "@react-pdf-viewer/default-layout/lib/styles/index.css";
 import { Worker } from "@react-pdf-viewer/core";
-import { textAlign } from "@mui/system";
 
 // import ReactDOM from "react-dom";
 const Profile = (props) => {
@@ -87,13 +86,22 @@ const Profile = (props) => {
           required
           onChange={handleFileChange}
         />
-        {pdfFileError && <div className="error-msg"><br/>{pdfFileError}</div>}
+        {pdfFileError && (
+          <div className="error-msg">
+            <br />
+            {pdfFileError}
+          </div>
+        )}
         <br />
-        <button type="submit" className="btn btn-sucess btn-lg" style={{float: "right"}}>
+        <button
+          type="submit"
+          className="btn btn-sucess btn-lg"
+          style={{ float: "right" }}
+        >
           Upload
         </button>
       </form>
-      <br/>
+      <br />
       <h6 style={{ textAlign: "center" }}>PDF Renderer</h6>
       <div className="pdf-container">
         {viewPdf && (
